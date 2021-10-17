@@ -2,11 +2,9 @@ var button = $(".saveBtn")
 var currentTime = moment().format('MMMM Do YYYY, h:mm a')
 var plannerTime = parseInt($(this).attr('id'))
 
-$('#currentTime').html(currentTime);
-
 function scheduleTime() { 
     $(document).ready(function(){
-        $('#currentDay').text(currentTime);
+        $('#currentTime').text(currentTime);
     });
     $(".time-block").each(function(){
         if (plannerTime < currentTime) {
