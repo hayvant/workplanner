@@ -5,6 +5,9 @@ var plannerTime = parseInt($(this).attr('id'))
 $('#currentTime').html(currentTime);
 
 function scheduleTime() { 
+    $(document).ready(function(){
+        $('#currentDay').text(currentTime);
+    });
     $(".time-block").each(function(){
         if (plannerTime < currentTime) {
             $(this).addClass('past');
