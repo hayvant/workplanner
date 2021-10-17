@@ -28,8 +28,8 @@ function scheduleTime() {
   });
 
   function storage() {
-    for (var key in localStorage) {
-        $('#hour' + key + ' .description').val(localStorage.getItem(key))
+    for (var keyName in localStorage) {
+        $('#value' + keyName + ' .description').val(localStorage.getItem(keyName))
     }
 };
 
